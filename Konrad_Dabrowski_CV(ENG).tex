@@ -13,13 +13,11 @@
 
   
   \newsection{red}{\rgb{Edu}cation}
-    \intervalSection
-    {
+    \intervalSection {
       \interval
         {\from{10.2010}}
         {\onto{01.2017}}
-    }
-    {
+    } {
       \education
         {\bf Gdańsk University of Technology}
         {Electrical and Control Engineering}
@@ -29,12 +27,13 @@
     
   \vspace{-1.5mm}\newsection{red}{\rgb{Com}petences}
     \large\sectionItems {
-      \item Microsoft technologies: {\bf C\#}, {\bf ASP.NET Framework/Core}, {\bf MSSQL}
-      \item .NET toolchain: {\bf AutoMapper}, {\bf Autofac}, {\bf NLog}, {\bf NUnit}, XUnit, Moq, Fluent Assertions
-      \item Design patterns: {\bf MVC}, Observer, Decorator, Singleton, Command, Adapter, Facade, Iterator, Composite, State, Method and Abstract Factory, Command/Event handler
-      \item Web platforms: Angular, {\bf Vue}
+      \item Technologies: {\bf C\#}, {\bf ASP.NET Framework/Core}, {\bf MSSQL}, PLSQL
+      \item .NET toolchain: {\bf AutoMapper}, {\bf Autofac}, Hibernate, {\bf NLog}, {\bf NUnit}, XUnit, Moq, Fluent Assertions
+      \item OOP principles: {\bf SOLID}, DRY, KISS
+      \item Design patterns: {\bf MVC}, Observer, Decorator, Singleton, Command, Adapter, State, Method and Abstract Factory
+      \item Web platforms: Razor, Angular, {\bf Vue}
       \item Web toolchain: HTML, CSS, JavaScript, Axios, RxJS, Webpack
-      \item Other toolchain: JSON, XML, XSD, SOAP, RESTfull
+      \item Other toolchain: JSON, XML, XSD, SOAP, RESTfull, Bootstrap
       \item Distributed version-control systems: {\bf GIT}, TFS
     }
       
@@ -51,8 +50,7 @@
   \newsection{red}{\rgb{Skil}ls and other \rgb{com}petence}
     \tripleSubsections {
       \partOfTripleSubsections
-        {Languages}
-        {
+        {Languages} {
           \subsectionItems {
             \item English - intermediate
             %\item Russian - basic
@@ -60,8 +58,7 @@
         }
     }{
       \partOfTripleSubsections
-        {Personality traits}
-        {
+        {Personality traits} {
           \subsectionItems {
             \item Accuracy
             \item Hard-worker
@@ -71,8 +68,7 @@
         }
     }{
       \partOfTripleSubsections
-      {Development environments}
-      {
+      {Development environments} {
         \subsectionItems {
           \item Visual Studio IDE
           \item {\bf Visual Studio Code}
@@ -82,16 +78,35 @@
   
   \newpage\vspace*{-9mm}
   \newsection{red}{\rgb{Exp}erience}
-  \intervalSection
+  \intervalSection {
+    \interval{01.2019}{\hspace{-3.5mm} until now}} {
+      \experience
+        {Full Stack .NET Developer}
+        {Alior Bank S.A., Gdańsk}
+        {I'm responsible for the following:} {
+          \experienceItems {
+            % \item Projektowanie i implementacja nowych funkcjonalności w warstwie integracyjnej
+            \item Design and implementation of new functionalities in the integration layer
+            % \item rozwijanie i utrzymywanie istniejących aplikacji
+            \item Developing and maintaining existing applications
+            % \item tworzenie algorytmów i bibliotek wewnętrznych
+            \item Creating algorithms and internal libraries
+            % \item współpraca z reprezentantami różnych działów firmy przy zbieraniu wymagań
+            % \item Cooperation with representatives of various departments of the company in collecting requirements
+            % \item współpraca i uzgadnianie z architektami rozwiązań technicznych
+            \item Cooperation and agreeing technical solutions with architects
+            % \item pisanie testów dla tworzonego kodu
+            \item writing tests for created code
+          }
+        }
+  }
+  \intervalSection {
     % {\interval{01.2019}{\hspace{-3.5mm} until now}}
-    {\interval{01.2019}{11.2019}}
-    {
+    \interval{01.2019}{11.2019}} {
       \experience
         {Junior Vue/.NET Developer}
         {Sprint S.A., Gdańsk}
-        % {I'm responsible for the following:}
-        {I was responsible for the following:}
-        {
+        {I was responsible for the following:} {
           \experienceItems {
             \item Software development based on provided requirements ({\bf C\#})
             \item Software development according to corresponding standards
@@ -100,14 +115,12 @@
           }
         }
     }
-  \intervalSection
-    {\interval{09.2018}{12.2018}}
-    {
+  \intervalSection {
+    \interval{09.2018}{12.2018}} {
       \experience
         {Angular/.NET Developer}
         {Infoprojekt Sp. z o.o., Gdańsk}
-        {I was responsible for the following:}
-        {
+        {I was responsible for the following:} {
           \experienceItems {
             \item Continuously design, develop, and test web solutions ({\bf C\#})
             \item Providing high quality standards of programming
@@ -132,27 +145,24 @@
           }
         }
     }
-  \intervalSection
-    {\interval{07.2016}{09.2017}}
-    {
-      \experience
-        {Junior Engineer for testing and analysis}
-        {Sii Sp. z o.o., Gdańsk}
-        {I was responsible for the following:}
-        {
-          \experienceItems {
-            \item Analysis of project documentation
-            \item Designing test specification based on system specification
-            \item Implementing, code reviewing and refactoring automated tests ({\bf C\#})
-            \item Executing automated and manual tests of embedded systems
-            % \item Working on test process improvement and test automation
-            % \item Using laboratory measurement equipment and other tools specific for automotive industry for problem analysis and debugging
-          }
-        }
-    }
-  \intervalSection
-    {\interval{03.2015}{10.2015}}
-    {
+  % \intervalSection {
+  %   \interval{07.2016}{09.2017}} {
+  %     \experience
+  %       {Junior Engineer for testing and analysis}
+  %       {Sii Sp. z o.o., Gdańsk}
+  %       {I was responsible for the following:} {
+  %         \experienceItems {
+  %           \item Analysis of project documentation
+  %           \item Designing test specification based on system specification
+  %           \item Implementing, code reviewing and refactoring automated tests ({\bf C\#})
+  %           \item Executing automated and manual tests of embedded systems
+  %           % \item Working on test process improvement and test automation
+  %           % \item Using laboratory measurement equipment and other tools specific for automotive industry for problem analysis and debugging
+  %         }
+  %       }
+  %   }
+  \intervalSection {
+    \interval{03.2015}{10.2015}} {
       \experience
         {Intern Linux Software Engineer}
         {Intel Technology Poland Sp. z o.o., Gdańsk}
@@ -166,8 +176,7 @@
         }
     }
   
-  \newsectionandreferences{red}{\rgb{Int}erests}
-    {Playing the guitar, Kung-Fu}
+  \newsectionandreferences{red}{\rgb{Int}erests} {Playing the guitar, Kung-Fu}
 
   \vfill
   % \text
