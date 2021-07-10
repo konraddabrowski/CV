@@ -141,6 +141,18 @@
   \large #2
 }
 
+\newcommand{\twoColumns}[2] {
+  \begin{minipage}[t]{0.05\textwidth}
+    ~
+  \end{minipage}
+  \begin{minipage}[t]{0.5\textwidth}
+    #1
+  \end{minipage}
+  \begin{minipage}[t]{0.5\textwidth}
+    #2
+  \end{minipage}
+}
+
 \newcommand{\tripleSubsections}[3] {
   \begin{minipage}[t]{0.05\textwidth}
     ~
