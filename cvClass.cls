@@ -70,12 +70,12 @@
   {}{0em}
   {}
   
-\newcommand{\personalData}[5]{
+\newcommand{\personalData}[6]{
   \begin{itemize}[leftmargin=*]\setlength\itemsep{-0.8mm}
-    \item[] \Huge{\textsc{#1 #2}}
-    \item[] #3
+    \item[] \Huge{\textsc{#1 #2}}\hfill #3
     \item[] #4
     \item[] #5
+    \item[] #6
   \end{itemize}\vspace{3mm}
 }
 

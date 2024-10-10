@@ -1,9 +1,11 @@
+% > LaTeX Workshop: Build LaTeX project
 \documentclass{cvClass} %pdflatex
 
 \begin{document}
   \personalData
     {\name{Konrad}}
     {\surname{Dąbrowski}}
+    {\github{https://github.com/konraddabrowski}{\rgb{konrad}dabrowski}}
     {\phoneNumber{+48 690 317 314}}
     {\emailAddress{konrad.dabrowski.90@gmail.com}}
     {\linkedin{https://www.linkedin.com/in/konrad-d\%c4\%85browski-26a039b1}{konrad-dąbrowski-26a039b1}}
@@ -26,7 +28,7 @@
     
   \vspace{-1.5mm}\newsection{red}{\rgb{Com}petences}
     \large\sectionItems {
-      \item DevOps: {\bf Kubernetes}, Vault, Terraform
+      \item DevOps: {\bf Kubernetes}, Terraform, Keycloak, Metallb, RabbitMQ, Ingress-NGINX, Redis, Rook-Ceph, Vault
       \item Backend technologies: {\bf C\#}, {\bf ASP.NET Core}, MSSQL, MySQL
       \item .NET toolchain: {\bf AutoMapper}, {\bf Autofac}, Hibernate, {\bf NUnit}, Moq, Fluent Assertions, Dapper
       \item OOP principles: {\bf SOLID}, {\bf CQRS}, DRY, KISS
@@ -37,22 +39,22 @@
       \item Distributed version-control systems: {\bf GIT}, TFS
     }
       
-  \newsection{red}{\rgb{Pro}jects \hfill\github{https://github.com/konraddabrowski}{\rgb{konrad}dabrowski}}
-    \twoColumns {
-      \large\sectionItems {
-        \item \href{https://parafiakoziebrody.pl}{\rgb{Koziebrody} Parish (link)}
-        \item Arcaim.CQRS.Commands (.Net Core)
-        \item Arcaim.CQRS.Queries (.Net Core)
-        \item Arcaim.DI.Scanner (.Net Core)
-      }
-    }{
-      \large\sectionItems {
-        \item Arcaim.Assertor (.Net Core)
-        \item Arcaim.Exception (.Net Core)
-        \item Arcaim.MyDapper (.Net Core)
-        \item {\bf CV} (\LaTeX)
-      }
-    }
+  % \newsection{red}{\rgb{Pro}jects \hfill\github{https://github.com/konraddabrowski}{\rgb{konrad}dabrowski}}
+    % \twoColumns {
+    %   \large\sectionItems {
+    %     \item \href{https://christians.zone}{\rgb{Christians} zone (link to dev version)}
+    %     \item Arcaim.CQRS.Commands (.Net Core)
+    %     \item Arcaim.CQRS.Queries (.Net Core)
+    %     \item Arcaim.DI.Scanner (.Net Core)
+    %   }
+    % }{
+    %   \large\sectionItems {
+    %     \item Arcaim.Assertor (.Net Core)
+    %     \item Arcaim.Exception (.Net Core)
+    %     \item Arcaim.DbWrapper (.Net Core)
+    %     \item {\bf CV} (\LaTeX)
+    %   }
+    % }
 
   \newsection{red}{\rgb{Skil}ls and other \rgb{com}petence}
     \tripleSubsections {
@@ -226,7 +228,7 @@
   %       }
   %   }
   
-  \newsectionandreferences{red}{\rgb{Int}erests} {Apologetics, communication skills}
+  \newsectionandreferences{red}{\rgb{Int}erests} {DevOps, networking, playing guitar, communication skills}
 
   \vfill
   % \text
