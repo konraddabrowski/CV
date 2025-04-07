@@ -16,7 +16,8 @@
 \usepackage{enumitem}
 % \usepackage[showframe]{geometry}
 \usepackage{geometry}
-\usepackage{fontawesome}
+% \usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{hyperref} %https://www.utf8-chartable.de/unicode-utf8-table.pl
 \hypersetup{
   colorlinks=true,
@@ -191,13 +192,13 @@
   {\underline{#2}}
 }
 
-\newcommand{\experience}[4]{
+\newcommand{\experience}[5]{
   \begin{itemize}[leftmargin=0cm]\setlength\itemsep{-0.8mm}
-    \item[] {\bf #1}
-    \item[] {\underline{#2}}
-    \item[] #3
+    \item[] {{\bf #1}{\hfill \small#2}}
+    \item[] {\underline{#3}}
+    \item[] #4
   \end{itemize}\vspace{-5.8mm}
-  #4
+  #5
   \vspace{0.01cm}
 }
 
