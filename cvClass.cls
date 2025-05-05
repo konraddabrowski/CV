@@ -231,7 +231,7 @@
 }
 
 \newcommand{\sectionProgressBars}[1]{
-  \begin{itemize}[leftmargin=1.4cm]\setlength\itemsep{-0.8mm}
+  \begin{itemize}[leftmargin=1.0cm, label={}]\setlength\itemsep{-0.8mm}
     #1
   \end{itemize}
 }
