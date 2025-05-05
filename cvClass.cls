@@ -8,6 +8,7 @@
 
 \pagestyle{empty}
 \usepackage{graphicx}
+\usepackage{calc}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{polski}
 \usepackage{ragged2e}
@@ -64,13 +65,13 @@
   {}{0em}                      	     % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           	     % Can be used to insert code before the heading
   %[\titlerule]                      % Inserts a horizontal line after the heading
-  
+
 
 \titleformat{\subsection}
   {\large\scshape\raggedright}
   {}{0em}
   {}
-  
+
 \newcommand{\personalData}[6]{
   \begin{itemize}[leftmargin=*]\setlength\itemsep{-0.8mm}
     \item[] \Huge{\textsc{#1 #2}}\hfill #3
@@ -226,5 +227,28 @@
   \end{minipage}
   \begin{minipage}[t]{0.935\textwidth}
     \color{#1}{\footnotesize{#2}}
+  \end{minipage}
+}
+
+\newcommand{\sectionProgressBars}[1]{
+  \begin{itemize}[leftmargin=1.4cm]\setlength\itemsep{-0.8mm}
+    #1
+  \end{itemize}
+}
+
+\newlength{\barwidth}
+\setlength{\barwidth}{0.57\textwidth}
+
+\newcommand{\progressbar}[2]{
+  \begin{minipage}[t]{0.35\textwidth}
+    \large #1
+  \end{minipage}
+  \begin{minipage}[t]{0.65\textwidth}
+    \noindent\colorbox{gray!30}{%
+      \begin{minipage}[t]{\barwidth}
+        \colorbox{gray!30}{\rule{0pt}{4mm}}%
+        \colorbox{red!70}{\rule{0pt}{4mm}\hspace{#2\barwidth}}%
+      \end{minipage}%
+    }
   \end{minipage}
 }
