@@ -232,14 +232,13 @@
 }
 
 \newcommand{\sectionProgressBars}[1]{
-  \begin{itemize}[leftmargin=1.0cm, label={}]\setlength\itemsep{-0.8mm}
+  \begin{itemize}[leftmargin=1.0cm, label={}]\setlength\itemsep{-0mm}
     #1
   \end{itemize}
 }
 
 \newlength{\barwidth}
 \setlength{\barwidth}{0.57\textwidth}
-\newcounter{cnt}
 
 \newcommand{\progressbar}[2]{
   \begin{minipage}[c]{0.35\textwidth}
@@ -250,11 +249,8 @@
     \begin{minipage}[c]{\barwidth}
       \colorbox{gray!30}{\rule{0pt}{4mm}}%
       \colorbox{red!70}{\rule{0pt}{4mm}\hspace{#2\barwidth}}%
-      % \centerline{
       \FPeval{\result}{clip(#2*100)}%
       \textcolor{black}{\hspace{1mm}$\result$\%}
-          
-      % }
       \end{minipage}%
     }
   \end{minipage}
