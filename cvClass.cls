@@ -242,16 +242,19 @@
 \newcounter{cnt}
 
 \newcommand{\progressbar}[2]{
-  \begin{minipage}[t]{0.35\textwidth}
+  \begin{minipage}[c]{0.35\textwidth}
     \large #1
   \end{minipage}
-  \begin{minipage}[t]{0.65\textwidth}
+  \begin{minipage}[c]{0.65\textwidth}
     \noindent\colorbox{gray!30}{%
-      \begin{minipage}[t]{\barwidth}
-        \colorbox{gray!30}{\rule{0pt}{4mm}}%
-        \colorbox{red!70}{\rule{0pt}{4mm}\hspace{#2\barwidth}}%
-        \FPeval{\result}{clip(#2*100)}%
-        $\result$\%
+    \begin{minipage}[c]{\barwidth}
+      \colorbox{gray!30}{\rule{0pt}{4mm}}%
+      \colorbox{red!70}{\rule{0pt}{4mm}\hspace{#2\barwidth}}%
+      % \centerline{
+      \FPeval{\result}{clip(#2*100)}%
+      \textcolor{black}{\hspace{1mm}$\result$\%}
+          
+      % }
       \end{minipage}%
     }
   \end{minipage}
