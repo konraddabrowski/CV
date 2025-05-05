@@ -7,6 +7,7 @@
 \pdfobjcompresslevel=2
 
 \pagestyle{empty}
+\usepackage[nomessages]{fp}% http://ctan.org/pkg/fp
 \usepackage{graphicx}
 \usepackage{calc}
 \usepackage[dvipsnames]{xcolor}
@@ -238,6 +239,7 @@
 
 \newlength{\barwidth}
 \setlength{\barwidth}{0.57\textwidth}
+\newcounter{cnt}
 
 \newcommand{\progressbar}[2]{
   \begin{minipage}[t]{0.35\textwidth}
@@ -248,6 +250,8 @@
       \begin{minipage}[t]{\barwidth}
         \colorbox{gray!30}{\rule{0pt}{4mm}}%
         \colorbox{red!70}{\rule{0pt}{4mm}\hspace{#2\barwidth}}%
+        \FPeval{\result}{clip(#2*100)}%
+        $\result$\%
       \end{minipage}%
     }
   \end{minipage}
