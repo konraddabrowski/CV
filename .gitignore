@@ -6,3 +6,4 @@
 *.dvi
 *.out
 .vscode
+.idea
